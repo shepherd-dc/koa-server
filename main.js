@@ -1,13 +1,15 @@
 const Koa = require('koa')
 const Router = require('koa-router')
+const requireDirectory = require('require-directory')
 
 const app = new Koa()
-const router = new Router()
 
-router.get('/', (ctx, next) => {
-  ctx.body = 'Koa server is listening...'
-})
+requireDirectory(module, './src/api', { visit: whenLoadModule })
 
-app.use(router.routes())
+function whenLoadModule (obj) {
+  if (obj instanceof Router) {
+    app.use(obj.routes())
+  }
+}
 
 app.listen(3000)
