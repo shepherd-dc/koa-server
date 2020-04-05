@@ -1,0 +1,4 @@
+dist
+docs
+src/assets/**/*.js
+src/**/dist
