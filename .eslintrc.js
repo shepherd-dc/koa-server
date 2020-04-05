@@ -1,3 +1,5 @@
 module.exports = {
-  "extends": "standard"
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "rules": {}
 }

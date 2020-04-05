@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "nodemon main.js",
-    "test:dev": "nodemon --exec babel-node test/src",
+    "test:dev": "nodemon -w test/src --exec babel-node test/src",
     "test:build": "rimraf test/dist && babel test/src -s -D -d test/dist",
     "test:production": "node test/dist",
     "test:babel": "nodemon -w src/test --exec \"babel-node src/test --presets @babel/preset-env\""
@@ -17,6 +17,7 @@
   "author": "Shepherdnet",
   "license": "MIT",
   "dependencies": {
+    "core-decorators": "^0.20.0",
     "koa": "^2.11.0",
     "koa-router": "^7.4.0",
     "require-directory": "^2.1.1"
@@ -25,8 +26,10 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
