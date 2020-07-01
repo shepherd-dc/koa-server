@@ -4,7 +4,7 @@
   "description": "node server with koa2",
   "main": "main.js",
   "scripts": {
-    "dev": "nodemon main.js",
+    "server": "nodemon app.js",
     "test:dev": "nodemon -w test/src --exec babel-node test/src",
     "test:build": "rimraf test/dist && babel test/src -s -D -d test/dist",
     "test:production": "node test/dist",
@@ -17,10 +17,17 @@
   "author": "Shepherdnet",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "core-decorators": "^0.20.0",
+    "jsonwebtoken": "^8.5.1",
     "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
     "koa-router": "^7.4.0",
-    "require-directory": "^2.1.1"
+    "lodash": "^4.17.15",
+    "mysql2": "^2.1.0",
+    "require-directory": "^2.1.1",
+    "sequelize": "^6.2.4",
+    "validator": "^13.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
