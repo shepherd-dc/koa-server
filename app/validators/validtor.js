@@ -60,9 +60,6 @@ class RegisterValidator extends LinValidator {
 
 class TokenValidator extends LinValidator {
   constructor () {
-    // 隐藏的错误
-    // Java
-    // JS Python
     super()
     this.account = [
       new Rule('isLength', '不符合账号规则', {
@@ -71,7 +68,6 @@ class TokenValidator extends LinValidator {
       })
     ]
     this.secret = [
-      //    validator.js
       new Rule('isOptional'),
       new Rule('isLength', '至少6个字符', {
         min: 6,

@@ -17,6 +17,8 @@
   "author": "Shepherdnet",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
+    "basic-auth": "^2.0.1",
     "bcryptjs": "^2.4.3",
     "core-decorators": "^0.20.0",
     "jsonwebtoken": "^8.5.1",
