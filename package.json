@@ -26,6 +26,7 @@
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^7.4.0",
     "lodash": "^4.17.15",
+    "module-alias": "^2.2.2",
     "mysql2": "^2.1.0",
     "require-directory": "^2.1.1",
     "sequelize": "^6.2.4",
@@ -46,5 +47,14 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "rimraf": "^3.0.2"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@models": "app/models",
+    "@services": "app/services",
+    "@util": "app/util",
+    "@validators": "app/validators",
+    "@config": "config",
+    "@middlewares": "middlewares"
   }
 }

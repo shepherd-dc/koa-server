@@ -49,11 +49,23 @@ class RegisterValidator extends LinValidator {
     const email = vals.body.email
     const user = await User.findOne({
       where: {
-        email: email
+        email
       }
     })
     if (user) {
       throw new Error('email已存在')
+    }
+  }
+
+  async validateNickname (vals) {
+    const nickname = vals.body.nickname
+    const user = await User.findOne({
+      where: {
+        nickname
+      }
+    })
+    if (user) {
+      throw new Error('昵称已存在')
     }
   }
 }
@@ -62,7 +74,7 @@ class TokenValidator extends LinValidator {
   constructor () {
     super()
     this.account = [
-      new Rule('isLength', '不符合账号规则', {
+      new Rule('isLength', '长度不合法', {
         min: 4,
         max: 32
       })

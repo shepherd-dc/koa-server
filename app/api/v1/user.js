@@ -1,8 +1,8 @@
 const Router = require('koa-router')
 
-const { success } = require('../../util/helper')
-const { RegisterValidator } = require('../../validators/validtor')
-const { User } = require('../../models/user')
+const { success } = require('@util/helper')
+const { RegisterValidator } = require('@validators/validtor')
+const { User } = require('@models/user')
 
 const router = new Router({
   prefix: '/v1/user'
