@@ -3339,9 +3339,9 @@ validator@^10.11.0:
   version "10.11.0"
   resolved "https://registry.npm.taobao.org/validator/download/validator-10.11.0.tgz#003108ea6e9a9874d31ccc9e5006856ccd76b228"
 
-validator@^13.1.1:
-  version "13.1.1"
-  resolved "https://registry.npm.taobao.org/validator/download/validator-13.1.1.tgz?cache=0&sync_timestamp=1591907508436&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvalidator%2Fdownload%2Fvalidator-13.1.1.tgz#f8811368473d2173a9d8611572b58c5783f223bf"
+validator@^13.7.0:
+  version "13.7.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-13.7.0.tgz#4f9658ba13ba8f3d82ee881d3516489ea85c0857"
 
 vary@^1.1.2:
   version "1.1.2"

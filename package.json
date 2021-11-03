@@ -30,7 +30,7 @@
     "mysql2": "^2.1.0",
     "require-directory": "^2.1.1",
     "sequelize": "^6.2.4",
-    "validator": "^13.1.1"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
