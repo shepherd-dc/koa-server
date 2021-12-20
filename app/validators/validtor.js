@@ -1,4 +1,4 @@
-const { LinValidator, Rule } = require('../../lib/lin-validator-v2')
+const { LinValidator, Rule } = require('../../lib/xn-validator')
 const { User } = require('../models/user')
 const { LoginType, ArtType } = require('../util/enum')
 
